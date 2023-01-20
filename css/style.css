@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* MENU DE NAVEGACIÓN */
+
+.main-menu{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-end;
+}
+.main-menu li{
+    list-style: none;
+}
+.main-menu li a{
+    text-decoration: none;
+    color: rgb(36, 36, 35);
+    display: block;
+    padding: 0.5em;
+}
+.main-text{
+    background: linear-gradient(rgba(0, 0, 0, 0.465),rgba(0, 0, 0, 0.507)), url(../img/montaña.jpg);
+    height: 400px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.main-text-p{
+    font-size: 14px;
+}
+.main-text-title{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width:800px){
+    .main-text{
+        height: 600px;
+    }
+    .main-text-title{
+        color: white;
+    }
+}
