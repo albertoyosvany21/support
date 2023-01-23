@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#header{
+    background-color: cadetblue;
+}
+#main{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+#footer{
+    background-color: cadetblue;
+    height: 100px;
+}
+
+
+
+.nav-main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: rgba(29, 42, 73, 0.859);
+    padding: 1em 1.5em;
+    position: relative;
+    align-items: center;
+}
+.main-logo{
+    font-size: 1.5em;
+    color: rgb(171, 223, 31);
+    font-weight: bolder;
+}
+.main-menu{
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(116, 205, 37, 0.801);
+}
+.main-menu li{
+    list-style: none;
+}
+.main-menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: rgb(53, 22, 131);
+    border-bottom: 1px solid grey;
+}
+.main-menu li i{
+    padding-right: 0.4em;
+}
+.main-menu a:hover{
+    background-color: rgb(80, 119, 55);
+    color: rgb(249, 249, 249);
+}
+#check{
+    display: none;
+}
+#check-icon{
+    cursor: pointer;
+}
+#check-icon2{
+    display: none;
+    cursor: pointer;
+}
+#check-icon,#check-icon2{
+    cursor: pointer;
+    font-size: 1.3em;
+    color: rgb(171, 223, 31);
+}
+
+#check:checked ~ .main-menu{
+    display: block;
+    left: 0;
+    transition: all 0.5s;
+}
+#check:checked ~ #check-icon{
+    display: none;
+}
+#check:checked ~ #check-icon2{
+    display: block;
+}
+
+
+
+.main-banner{
+    background-color: rgb(159, 43, 0);
+    height: 20em;
+}
+
+
+@media screen and (min-width:600px){
+    .nav-main{
+        background-color: chocolate;
+    }
+    body{
+        font-size: 14px;
+    }
+}
