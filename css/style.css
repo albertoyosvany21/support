@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:    'header header'
+                            'main main'
+                            'footer footer';
+}
+
+header{
+    background-color: rgb(247, 245, 249);
+    grid-area: header;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+}
+aside{
+    background-color: rgb(64, 83, 75);
+    display: none;
+}
+footer{
+    background-color: rgb(41, 39, 36);
+    grid-area: footer;
+}
+
+/* HEADER PRINCIPAL */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.main-menu{
+    display: flex;
+}
+.main-menu li{
+    list-style: none;
+}
+.main-menu li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 102, 169);
+    padding: 1em;
+}
+
+/* MAIN PRINCIPAL */
+
+.main-banner{
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.452)), url(../img/main-fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+.main-title{
+    padding: 3em 0.5em 1em 0.5em;
+}
+.main-text{
+    width: 70%;
+    padding-left: 1.5em;
+
+}
+.main-services{
+    padding: 1em;
+}
+.main-services-title{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.main-services-box{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: 250px 250px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.main-services-box div{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.main-gallery{
+    display: flex;
+    flex-direction: column;
+}
+.main-gallery-title{
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+.main-gallery-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+}
+.main-gallery-box div:nth-child(1){
+    grid-row: 1/3;
+}
+.main-gallery-box div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER PRINCIPAL */
+
+.main-footer{
+    padding: 1em;
+}
+.footer-menu li{
+    list-style: none;
+}
+.footer-menu li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(202, 201, 199);
+    padding: 1em;
+}
