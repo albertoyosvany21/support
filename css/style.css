@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Phudu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+#header{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+#main{
+    background-color: cornflowerblue;
+    flex-grow: 1;
+}
+#footer{
+    background-color: cornflowerblue;
+    height: 100px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    padding: 1em 2em;
+}
+.header-nav div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-family: 'Phudu', cursive;
+}
+
+/* HEADER PRINCIPAL */
+
+.header-menu{
+    display: flex;
+}
+.header-menu li{
+    list-style: none;
+    margin: 0 0.5em;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.main-banner{
+    background-color: rgb(103, 136, 198);
+    height: 31.25em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/fondo-banner2.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(246, 247, 249); 
+}
+.main-banner h1{
+    width: 70%;
+    font-size: 2.5em;
+    font-family: 'Phudu', cursive;
+    text-transform: uppercase;
+    
+}
+.main-banner p{
+    width: 70%;
+    line-height: 1.5;
+    margin: 1em 0;
+    text-align: justify;
+    font-size: 0.9em;
+   
+}
+.main-banner button{
+    padding: 1em;
+    border: none;
+    background-color: crimson;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 16px;
+        background-color: aquamarine;
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+
+
+
+    .main-banner h1{
+        width: 85%;
+        font-size: 2em;
+    }
+    .main-banner p{
+        width: 95%;
+    }
+
+
+}
