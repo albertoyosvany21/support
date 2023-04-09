@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Phudu&display=swap');
+
 
 *{
     margin: 0;
@@ -9,114 +8,103 @@
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+
 #header{
-    background-color: rgb(255, 255, 255);
-    height: auto;
+    background-color: rebeccapurple;
 }
 #main{
-    background-color: cornflowerblue;
+    background-color: rgb(254, 254, 254);
     flex-grow: 1;
 }
 #footer{
-    background-color: cornflowerblue;
+    background-color: rgb(64, 134, 253);
     height: 100px;
 }
 
-.header-nav{
+.header__main-nav{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4em;
     padding: 1em 2em;
-}
-.header-nav div:first-child{
-    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
-.header-logo{
-    padding-left: 1em;
-    font-size: 1.5em;
-    font-family: 'Phudu', cursive;
-}
-
-/* HEADER PRINCIPAL */
-
-.header-menu{
+.header__main-menu{
     display: flex;
 }
-.header-menu li{
+.header__main-menu li{
     list-style: none;
-    margin: 0 0.5em;
 }
-.header-menu li a{
+.header__main-menu li a{
     text-decoration: none;
-    color: rgb(85, 85, 85);
-}
-
-/* CONTENIDO PRINCIPAL */
-
-.main-banner{
-    background-color: rgb(103, 136, 198);
-    height: 31.25em;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/fondo-banner2.jpg);
-    background-size: cover;
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: rgb(246, 247, 249); 
-}
-.main-banner h1{
-    width: 70%;
-    font-size: 2.5em;
-    font-family: 'Phudu', cursive;
-    text-transform: uppercase;
-    
-}
-.main-banner p{
-    width: 70%;
-    line-height: 1.5;
-    margin: 1em 0;
-    text-align: justify;
+    margin-right: 10px;
+    color: black;
     font-size: 0.9em;
-   
 }
-.main-banner button{
+
+#header__main-check{
+    display: none;
+}
+#header__main-check--open{
+    display: none;
+}
+#header__main-check--close{
+    display: none;
+}
+
+
+/* GALERÍA PRINCIPAL */
+
+.gallery{
     padding: 1em;
-    border: none;
-    background-color: crimson;
-    color: white;
+    text-align: center;
 }
+.gallery__main-title{
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    display: block;
+}
+.gallery p{
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
+.gallery__main-container{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+.gallery__main-container img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 3px rgba(186,186,186,1);
+    object-fit: cover;
+
+}
+
 
 @media screen and (max-width:800px) {
-    body{
-        font-size: 16px;
-        background-color: aquamarine;
-    }
-
-    .header-menu{
+    .header__main-menu{
         display: none;
     }
-
-
-
-
-    .main-banner h1{
-        width: 85%;
-        font-size: 2em;
-    }
-    .main-banner p{
-        width: 95%;
+    #header__main-check--open{
+        display: block;
     }
 
 
+    .gallery__main-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }

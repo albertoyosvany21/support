@@ -10,31 +10,42 @@
 </head>
 <body>
     <header id="header">
-        <nav class="header-nav">
-            <div>
-                <label for="check" id="check-icon2"><i class="fa-solid fa-bars"></i></label>
-                <span class="header-logo">ALBERTO</span>
-            </div>
-            <ul class="header-menu">
+        <nav class="header__main-nav">
+            <span class="header__main-logo">ALBERTO OS</span>
+            <input type="checkbox" name="" id="header__main-check">
+            <label for="header__main-check" id="header__main-check--open"><i class="fa-solid fa-bars"></i></label>
+            <label for="header__main-check" id="header__main-check--close"><i class="fa-solid fa-xmark"></i></label>
+            <ul class="header__main-menu">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
                 <li><a href="#">Descargas</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Galería</a></li>
                 <li><a href="#">Contactos</a></li>
-                <li><a href="#">Ubicación</a></li>
             </ul>
-            <div>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-            </div>
         </nav>
     </header>
     <main id="main">
-        <section class="main-banner">
-            <h1>Soporte y Mantenimiento de Equipos de Computación</h1>
-            <p>Realizamos servicio técnico de impresoras en las marcas Epson, Canon y HP</p>
-            <button>CONSULTAS</button>
+        <section class="gallery">
+            <span class="gallery__main-title">GALERÍA DE FOTOS</span>
+            <p>Disfrutamos nuentro trabajp y conpratirlo contigo</p>
+            <div class="gallery__main-container">
+                <img src="img/image1.jpg" alt="">
+                <img src="img/image2.jpg" alt="">
+                <img src="img/image3.jpg" alt="">
+                <img src="img/image4.jpg" alt="">
+            </div>
         </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <nav class="footer__main-nav">
+            <ul class="footer__main-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Descargas</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
