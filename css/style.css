@@ -12,12 +12,9 @@ body{
 
 header{
     display: flex;
-    align-items: center;
+    align-items: end;
     background-color: #2A73C7;
-    height: 100px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1em 2em;
+    height: 100vh;
 }
 
 .main-menu{
@@ -33,27 +30,7 @@ header{
 
 @media screen and (max-width:800px){
     header{
-        background-color: rgb(149, 179, 41);
+        
         position: relative;
-    }
-
-    .main-menu{
-        flex-direction: column;
-        justify-content: flex-start;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #2E2D2E;
-        width: 70%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .main-menu li{
-        padding: 1em;
-
-    }
-    .main-menu li a{
-        color: #0e71ce;
     }
 }
