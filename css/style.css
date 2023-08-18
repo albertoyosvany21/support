@@ -14,8 +14,8 @@ html, body{
 header{
     display: flex;
     align-items: end;
-    background-color: #0e3383;
-    height: 100vh;
+    background-color: #dd9037;
+    height: 100%;
 }
 
 .main-menu{
@@ -27,5 +27,5 @@ header{
 }
 .main-menu li a{
     text-decoration: none;
-    color: rgb(175, 216, 25);
+    color: rgb(20, 20, 19);
 }
