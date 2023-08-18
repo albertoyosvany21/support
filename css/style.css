@@ -46,7 +46,6 @@ header{
         background-color: #2E2D2E;
         width: 70%;
         height: calc(100vh - 100px);
-        padding: 2em;
     }
 
     .main-menu li{
