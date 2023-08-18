@@ -46,6 +46,7 @@ header{
         background-color: #2E2D2E;
         width: 70%;
         height: calc(100vh - 100px);
+        overflow: hidden;
     }
 
     .main-menu li{
