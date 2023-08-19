@@ -1,7 +1,7 @@
 /* SECCION BANNER PRINCIPAL */
 
 .banner{
-    height: 30em;
+    height: 35em;
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,14 @@
     font-size: 3em;
 }
 @media screen and (max-width:800px) {
+    
+    .banner-title{
+        font-size: 1.7em;
+    }
+    .banner-text{
+        font-size: 1em;
+    }
+    
     .services-box--1{
         grid-column: 1 / -1;
     }
