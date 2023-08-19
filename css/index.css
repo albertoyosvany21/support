@@ -1,0 +1,74 @@
+/* SECCION BANNER PRINCIPAL */
+
+.banner{
+    height: 30em;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    text-align: center;
+}
+.banner-title{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.banner-text{
+    margin-bottom: 40px;
+}
+.banner-button{
+    background-color: black;
+    color: white;
+}
+.banner-button:hover{
+    background-color: rgb(68, 67, 67);
+    color: rgb(211, 243, 30);
+}
+
+/* SECCION SERVICIOS PRINCIPAL */
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+}
+
+.services-box--1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-color: cadetblue;
+    width: 100%;
+}
+
+.services-box{
+    padding: 1em;
+    margin: auto;
+}
+.services-box-item{
+    background-color: blanchedalmond;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    margin: 0.5em;
+}
+.services-box-item span{
+    text-align: center;
+    display: block;
+}
+.services-box-item p{
+    margin: 15px 0;
+}
+.services-box-item i{
+    font-size: 3em;
+}
+@media screen and (max-width:800px) {
+    .services-box--1{
+        grid-column: 1 / -1;
+    }
+    .services-box{
+        grid-column: 1 / 3;
+    }
+}

@@ -20,8 +20,8 @@ html, body{
 /* MAQUETACION PRINCIPAL */
 
 #header{
-    background-color: red;
-    height: 100px;
+    background-color: rgb(255, 255, 255);
+    height: auto;
 }
 #main{
     background-color: rgb(241, 183, 183);
@@ -33,3 +33,52 @@ html, body{
 }
 
 
+/* MENU DE NAVEGACION PRINCIPAL */
+
+.container-menu{
+    height: 90px;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+}
+.main-menu li{
+    list-style: none;
+    margin: 0 10px;
+}
+.main-menu li a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+.logo-menu{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+    text-transform: uppercase;
+}
+
+/* ESTILOS PARA BOTONES */
+
+.button{
+    display: block;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .main-menu{
+        display: none;
+    }
+}
