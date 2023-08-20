@@ -1,84 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* RESET GENERAL */
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
+body{
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 
-/* MAQUETACION PRINCIPAL */
+/***** MENU DE NAVEGACION PRINCIPAL *****/
 
-#header{
-    background-color: rgb(255, 255, 255);
-    height: auto;
-}
-#main{
-    background-color: rgb(241, 183, 183);
-    flex-grow: 1;
-}
-#footer{
-    background-color: red;
-    height: 100px;
-}
-
-
-/* MENU DE NAVEGACION PRINCIPAL */
-
-.container-menu{
-    height: 90px;
-    padding: 0 2em;
+.menu__container{
+    height: 80px;
+    padding: 0em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    font-size: 1.2em;
+    font-weight: 500;
 
-.main-menu{
-    display: flex;
-}
-.main-menu li{
-    list-style: none;
-    margin: 0 10px;
-}
-.main-menu li a{
-    text-decoration: none;
-    color: dodgerblue;
 }
 
 
-.logo-menu{
-    font-size: 1.5em;
-    font-weight: 700;
-    color: rgb(53, 53, 53);
-    text-transform: uppercase;
-}
+/* ESTILOS PARA APLICAR EN CLASES */
 
-/* ESTILOS PARA BOTONES */
-
-.button{
-    display: block;
+.button__classic{
     padding: 1em 2em;
-    cursor: pointer;
-    border-radius: 25px;
     border: none;
+    border-radius: 50px;
+    cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-@media screen and (max-width:800px) {
-    .main-menu{
-        display: none;
-    }
+    font-size: 0.85em;
 }
