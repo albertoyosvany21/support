@@ -23,7 +23,9 @@ body{
     align-items: center;
     font-size: 1.2em;
     font-weight: 500;
-
+    background-color: rgb(41, 97, 156);
+    
+    color: rgb(255, 255, 255);
 }
 
 
